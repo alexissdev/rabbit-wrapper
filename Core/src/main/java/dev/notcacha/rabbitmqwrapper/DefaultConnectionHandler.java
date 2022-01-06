@@ -77,7 +77,7 @@ public class DefaultConnectionHandler implements ConnectionHandler {
 
         @Override
         public ConnectionHandler.Builder password(String password) {
-            this.password = Validate.nonNull(host, "Password credential from rabbitmq connection is null");
+            this.password = Validate.nonNull(password, "Password credential from rabbitmq connection is null");
 
             return this;
         }
